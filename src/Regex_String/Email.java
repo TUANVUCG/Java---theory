@@ -17,9 +17,8 @@ public class Email {
 
             Matcher matcher = pattern.matcher(str);
 
-            boolean match = matcher.matches();
 
-            if (match) {
+            if (matcher.find()) {
                 System.out.println("Ok");
             } else {
                 System.out.println("Email không có kí tự đặc biệt, không viết hoa");

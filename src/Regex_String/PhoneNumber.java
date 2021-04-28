@@ -18,9 +18,8 @@ public class PhoneNumber {
 
             Matcher matcher = pattern.matcher(str);
 
-            boolean match = matcher.matches();
 
-            if(match){
+            if(matcher.find()){
                 System.out.println("Ok");
             }
             else{
